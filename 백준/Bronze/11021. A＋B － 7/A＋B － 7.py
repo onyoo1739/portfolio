@@ -1,7 +1,5 @@
-n=int(input())
-
-for i in range(n):
-
-   A,B=map(int,input().split())
-
-   print("Case #%d: %d"%(i+1,A+B))
+T=int(input())
+for i in range(T):
+    a,b=map(int,input().split())
+    print('Case #%d: %d'%(i+1,a+b))
+    
