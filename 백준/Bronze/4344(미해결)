@@ -1,0 +1,9 @@
+c=int(input())
+a=list(map(int,input().split()))
+avg=(sum(a)-a[0])/a[0]
+stu=0
+for j in a[1:]:
+    if j > avg:
+        stu+=1
+rate=stu/a[0]*100
+print('{0:.03f%}'.format(rate))
