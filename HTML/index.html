@@ -1,22 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctypte.html>
-<html>
 <head>
-    <title>WEB1-WELCOME</title>
-    <meta charest="'utf-8">
-</head>
- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 버킷리스트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
-<body>
-    <h1><a href="index.html">WEB</h1></a>
-    <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JAVAScript</a></li>
-    </ol>
-    <h2>WEB </h2>
-        <p>Web is a computer programming system created by Donald E. Knuth as the first implementation of what he called "literate programming": the idea that one could create software as works of literature, by embedding source code inside descriptive text, rather than the reverse (as is common practice in most programming languages), in an order that is convenient for exposition to human readers, rather than in the order demanded by the compiler.</p>
-        
-        <p>Web consists of two secondary programs: TANGLE, which produces compilable Pascal code from the source texts, and WEAVE, which produces nicely-formatted, printable documentation using TeX.</p>
+        * {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+        .fontTwo{
+            font-family: @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Brush+Script&display=swap');
+        }
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            border-radius: 8px;
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .done::after {
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+            opacity: 0.4;
+            }
+    </style>
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<body class="bg-t2 center">
+    <h1 class="title fontTwo">2023 신년계획</h1>
+    <p class="msg"> 올해 반드시 지킬 목록!!</p>
+    <div class="row flex-row wrap">
+        <div class="bucket img2-t2 center done">솦으로 전과하기!</div>
+        <div class="bucket img2 center">백준 실버 3이상 찍기</div>
+        <div class="bucket img2 center">자바 언어 공부하기</div>
+        <div class="bucket img2-t2 center">미적분 기초 공부하기</div>
+        <div class="bucket img2-t2 center">전체 학점 4점대로 다시 만들기</div>
+        <div class="bucket img2 center">다이어트 시작하기</div>
+    </div>
 </body>
-</html> 
+
+</html>
+<!-- div -> 박스->
+<!-- shift alt f -> 알아서 짝 맞추어줌->
+    padding -> 위아래 양옆 안쪽여백
+    done -> 르탄이 완료
