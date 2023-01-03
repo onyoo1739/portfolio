@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+h3 {
+    width: 300px;
+    text-align: center;
+}
+
+/* id가 있는 element를 가져올땐
+#id를 이용해서 가져올 수 있다.
+ */
+#reset-btn {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    text-align: center;  /* 글자 가운데 정렬 */
+    visibility: hidden;
+}
