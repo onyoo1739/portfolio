@@ -1,0 +1,27 @@
+/*
+HTML태그 {
+    HTML 태그에 적용될 스타일: 스타일 값;
+}
+*/
+
+/* 주석 */
+/* 주석이 적용된 코드는 실행되지 않는다 */
+
+body {
+    /* 여백을 조절하는 스타일 */
+    margin: 0px;
+    /* 너비를 조절하는 스타일 */
+    /* viewport의 100%에 해당하는 너비를 주세요 */
+    width: 100vw; 
+    /* 높이를 조절하는 스타일 */
+    height: 100vh;
+}
+
+h1 {
+    margin: 0px;
+    width: fit-content;
+    position: relative;
+    background: linear-gradient(to right, #fbcac9 50%, #8ca6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
